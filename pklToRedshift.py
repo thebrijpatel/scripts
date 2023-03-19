@@ -20,5 +20,5 @@ with open('<pkl file path>', 'rb') as f:
 df = pd.DataFrame(object)
 new_column_name = {}
 
-df.to_sql('3d_cluster_acad', engine, if_exists='replace', index=False, schema="mesa")
+df.to_sql('<tablename>', engine, if_exists='replace', index=False, schema="<schemaname>")
 
